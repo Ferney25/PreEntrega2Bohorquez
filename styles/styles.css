@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color:rgb(207, 211, 226) ;
+}
+
+
+header {
+    border-bottom: 1px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+}
+
+nav {
+    display: inline-block;
+    margin-right: 20px;
+    float: right;
+}
+
+#nav {
+    list-style: none;
+    padding-left: 10px;
+}
+
+#nav li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#about-me {
+    margin-left: 0px;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: #3B46BF;
+    text-decoration: none;
+}
+
+#main {
+    background-image: url(../IMG/background.png);
+    background-size: contain;
+    display: flex;
+    min-height: 90vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5em;
+    max-width: 900px;
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
+}
+
+.profile {
+    max-width: 450px;
+    min-width: 320px;
+}
+
+.profile-pic { 
+    width: 100%;
+    border-radius: 25% ;
+}
+
+footer {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.contact-info {
+    display: inline-block;
+    height: 0px;
+    padding-top: 10px;
+}
+
+.phone-logo {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.email-logo {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.social-icons {
+    display: inline;
+    float: right;
+}
+
+.twitter-logo, .in-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    
+}
+
+.in-logo {
+    margin-right: 20px;
+}
+
+
+
+/* About me page  */
+
+#main-css {
+    background-image: url(../IMG/background.png);
+    background-size: contain;
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pic-of-me {
+    max-width: 450px;
+    min-width: 320px;
+    border-radius: 10px;
+}
+
+
+#about-me-text {
+    margin-left: 50px;
+    max-width: 600px;
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
+}
+
+#title-about-me {
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+#des-of-me {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+/* Projects page  */
+
+#main-projects {
+    min-height: 80vh;
+    background-image: url(../IMG/background.png);
+    background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #222222;
+}
+
+.project {
+    max-width: 250px;
+    margin: 30px 50px;
+}
+
+.project a img {
+    width: 100%;
+}
+
+#no-content {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* skills page  */
+
+#main-skills {
+    min-height: 85vh;
+    background-image: url(../IMG/background.png);
+    background-size: contain;
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
+}
+
+#main-skills h2, #main.skills p {
+    text-align: center;
+}
+
+.pres {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.my-skills {
+    text-align: center;
+    display: inline-block;
+}
+
+#skills {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#skills div {
+    margin-top: 20px;
+    text-align: center;
+    min-width: 250px;
+    min-height: 400px;
+    background-color: #e2e5ff;
+    border-radius: 10px;
+}
+
+#skills div ul {
+    text-decoration: none;
+    text-align: left;
+}
+
+#skills div ul li {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#frontend img {
+    border-radius: 100%;
+    max-width: 80px; 
+}
+
+#backend img {
+    border-radius: 100%;
+    max-width: 80px; 
+    border: solid 1px rgb(175, 175, 175);
+}
+
+#other img {
+    border-radius: 100%;
+    max-width: 80px; 
+    border: solid 1px rgb(175, 175, 175);
+}
+
+
+/* contact me page  */
+
+#main-contact-me {
+    min-height: 90vh;
+    background-image: url(../IMG/background.png);
+    background-size: contain;
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
+}
+
+#main-contact-me h2 {
+    text-align: right;
+    font-size: 7em;
+    max-width: 800px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#main-contact-me ul {
+    float: right;
+    width: 400px;
+    margin-right: 150px;
+}
+
+#main-contact-me ul li {
+    font-size: 2em;
+
+}
